@@ -1,0 +1,56 @@
+﻿@model Taxi.Models.Order
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Order</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.destinationAddress)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.destinationAddress)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.departureAddress)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.departureAddress)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.clientPhoneNumber)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.clientPhoneNumber)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.date)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.date)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.time)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.time)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.status)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.status)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Back to List", "Index")
+</p>
